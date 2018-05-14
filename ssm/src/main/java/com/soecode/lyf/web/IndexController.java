@@ -25,6 +25,11 @@ public class IndexController {
 	@Autowired
 	private BookService bookService;
 
+	/**
+	 * 跳转index页面
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	private String index(Model model) {
 		return "index";
