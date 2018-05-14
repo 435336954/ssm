@@ -12,6 +12,6 @@
 </head>
 <body>
 <h3>1.1、验证码生成回显demo</h3>
-<a href="">点击生成</a>
+<a href="/code/index">点击生成</a>
 </body>
 </html>
