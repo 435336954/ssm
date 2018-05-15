@@ -29,6 +29,14 @@
 	 	<property name="prefix" value="/WEB-INF/jsp/" />
 	 	<property name="suffix" value=".jsp" />
 	 </bean>
+
+	<!-- 验证码 -->
+	<bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
+		<property name="captchaEngine">
+			<bean class="com.soecode.lyf.utils.captcha.CaptchaEngine" />
+		</property>
+		<property name="minGuarantedStorageDelayInSeconds" value="3600" />
+	</bean>
 	 
 	 <!-- 4.扫描web相关的bean -->
 	 <context:component-scan base-package="com.soecode.lyf.web" />

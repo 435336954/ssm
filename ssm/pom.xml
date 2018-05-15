@@ -134,11 +134,31 @@
 		</dependency>
 
 		<!-- Map工具类 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
 			<version>3.2</version>
+		</dependency>-->
+
+		<!--验证码包-->
+		<dependency>
+			<groupId>com.octo.captcha</groupId>
+			<artifactId>jcaptcha</artifactId>
+			<version>1.0</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+			</exclusions>
+
 		</dependency>
+		<!--<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>-->
+
 	</dependencies>
 	<build>
 		<finalName>ssm</finalName>
