@@ -19,10 +19,10 @@
 <body>
 <div class="yzm_wrap clearfix">
     <div class="login_tit">Verification Code</div>
-    <div class="clearfix">
+    <%--<div class="clearfix">
         <input class="yami" type="text" name="" id="code" maxlength="4" />
         <img alt="${ly:T("点击更换") }" title="${ly:T("点击更换") }" src="" class="img" id="codeImg" height="25" width="68"/>
-    </div>
+    </div>--%>
 </div>
 </body>
 </html>
